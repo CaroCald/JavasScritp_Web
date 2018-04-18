@@ -6,6 +6,13 @@ var fechaNacimiento = new Date();
 var casado = false;
 var estoyVacio = null;
 var noEstoyDefinido = undefined;
+var mutar; //undefined
+/*mutar=nombre;
+console.log(mutar);
+mutar=edad;
+console.log(mutar);
+mutar=fechaNacimiento;
+console.log(mutar);*/
 /*if (estoyVacio) {
     console.log("Verdadero")
 } else {
@@ -37,7 +44,7 @@ if (-1) {
 var usuario = {
     "nombre": "Carolina",
     apellido: 'Calderon',
-    edad: 24,
+    edad: sumarDosNumeros(10,14), //ejecutar la funcion y guardar el resultado en la edad
     //utilizar funcion anonima
     /*imprimirEnConsola: function () {
         console.log(this.nombre+ ' '+ this.apellido+' '+ this.edad)
@@ -47,6 +54,7 @@ var usuario = {
 };
 //usuario.imprimirEnConsola(1,2);
 console.log(usuario.imprimirEnConsola); //sale el nombre de la funcion
+console.log(usuario);
 /*console.log(usuario.nombre);
 console.log(usuario);
 //se puede ir cambiando los atributos
