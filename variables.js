@@ -1,34 +1,43 @@
 console.log('hola mundo');
-var nombre= 'Carolina';
-var edad= 24;
+var nombre = 'Carolina';
+var edad = 24;
 var deudas = 399.99;
-var fechaNacimiento= new Date();
+var fechaNacimiento = new Date();
 var casado = false;
-var estoyVacio=null;
-var noEstoyDefinido=undefined;
-if(estoyVacio){
+var estoyVacio = null;
+var noEstoyDefinido = undefined;
+if (estoyVacio) {
     console.log("Verdadero")
-}else{
+} else {
     console.log("Falso")
 }
 // devuelve falso
-if(noEstoyDefinido){
+if (noEstoyDefinido) {
     console.log("Verdadero")
-}else{
+} else {
     console.log("Falso")
 } //devuelve falso
-if(1){
+if (1) {
     console.log("Verdadero")
-}else{
+} else {
     console.log("Falso")
 }//verdadero
-if(0){
+if (0) {
     console.log("Verdadero")
-}else{
+} else {
     console.log("Falso")
 }//Falso
-if(-1){
+if (-1) {
     console.log("Verdadero")
-}else{
+} else {
     console.log("Falso")
 }//verdadero
+
+/* Json * ctrl +a , ctrl +alt+l=formatear*/
+var usuario = {
+    "nombre": "Carolina",
+    apellido: 'Calderon',
+    edad: 24
+};
+console.log(usuario.nombre);
+console.log(usuario);
