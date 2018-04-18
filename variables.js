@@ -39,12 +39,15 @@ var usuario = {
     apellido: 'Calderon',
     edad: 24,
     //utilizar funcion anonima
-    imprimirEnConsola: function () {
+    /*imprimirEnConsola: function () {
         console.log(this.nombre+ ' '+ this.apellido+' '+ this.edad)
-    }
+    }*/
+    imprimirEnConsola: sumarDosNumeros
+    //imprimirEnConsola: sumarDosNumerosVersionDos(2,1)
 };
-usuario.imprimirEnConsola();
-console.log(usuario.nombre);
+//usuario.imprimirEnConsola(1,2);
+console.log(usuario.imprimirEnConsola); //sale el nombre de la funcion
+/*console.log(usuario.nombre);
 console.log(usuario);
 //se puede ir cambiando los atributos
 delete usuario.edad;
@@ -63,7 +66,7 @@ console.log(usuario);
 console.log(typeof nombre);
 console.log(typeof edad);
 console.log(typeof deudas);
-console.log(typeof casado);
+console.log(typeof casado);*/
 //funciones
 function sumarDosNumeros( numeroUno, numeroDos) {
     return numeroUno+numeroDos;
