@@ -85,3 +85,17 @@ var sumarDosNumerosVersionDos = function( numeroUno, numeroDos) {
     return numeroUno+numeroDos;
 }
 console.log(sumarDosNumerosVersionDos(1,3));
+//ARREGLOS
+var arreglo=[
+    1,
+    2,
+    "Carolina",
+    2.2,
+    undefined,
+    null,
+    {
+        apellido: "Calderon"
+    },
+    sumarDosNumeros(2,4)
+];
+console.log(arreglo);
