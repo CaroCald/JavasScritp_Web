@@ -26,6 +26,27 @@ var Usuario = /** @class */ (function () {
     };
     return Usuario;
 }());
+var usuarioOtro = {
+    nNombre: 'Jose',
+    mEdad: 22,
+    mCedula: '112121212'
+};
 var usuario = new Usuario('Carolina', 24, '123332323');
 console.log(usuario);
-//usuario.imprimirEnConsola();
+console.log(usuarioOtro);
+console.log(usuario.imprimirEnConsola());
+var usuarioCuatro;
+usuarioCuatro = {
+    mNombre: 'Caro',
+    mEdad: 22,
+    mCedula: '121212'
+    // imprimirEnConsola():
+};
+var usuarioTres = /** @class */ (function () {
+    function usuarioTres(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return usuarioTres;
+}());

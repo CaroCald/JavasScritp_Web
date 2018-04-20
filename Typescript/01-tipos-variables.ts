@@ -18,23 +18,56 @@ let casado: boolean = false;
 //------------CLASE------------
 class Usuario {
     public mNombre: String;
-    private mEdad: Number;
+    public mEdad: Number;
     protected mCedula: String;
 
     constructor(nombre: String,
                 edad: Number,
-                cedula:String) {
+                cedula: String) {
         this.mNombre = nombre;
-        this.mEdad=edad;
-        this.mCedula=cedula;
+        this.mEdad = edad;
+        this.mCedula = cedula;
     }
 
 
-    public imprimirEnConsola(){
+    public imprimirEnConsola() {
         //Temple Strings tilde invertida
         console.log(`El usuario se llama ${this.mNombre} la cedula del usuario es ${this.mCedula} la edad es ${this.mEdad}`)
     }
 }
-let  usuario: Usuario= new Usuario('Carolina', 24, '123332323');
+
+let usuarioOtro = {
+    nNombre: 'Jose',
+    mEdad: 22,
+    mCedula: '112121212'
+};
+let usuario: Usuario = new Usuario('Carolina', 24, '123332323');
 console.log(usuario);
+console.log(usuarioOtro);
+console.log(usuario.imprimirEnConsola());
 //usuario.imprimirEnConsola();
+
+//-----------INTERFACES------------------
+interface usuarioDos {
+    mNombre: String;
+    mEdad: Number;
+    mCedula: String;
+    //imprimirEnConsola(nombre:String):void; //devolver un numero camvbiar void por numbre
+}
+
+let usuarioCuatro: usuarioDos;
+usuarioCuatro = {
+    mNombre: 'Caro',
+    mEdad: 22,
+    mCedula: '121212'
+   // imprimirEnConsola():
+};
+
+class usuarioTres{
+
+    constructor(public mNombre: String,
+                public mEdad: String,
+                protected mCedula: String){
+
+    }
+}
